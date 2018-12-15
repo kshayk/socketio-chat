@@ -2,23 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <script
-            src="https://code.jquery.com/jquery-3.3.1.min.js"
-            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-            crossorigin="anonymous"></script>
+    <title>join | Chat app</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
-<body>
-    <ol id="messages">
-
-    </ol>
-
-    <form id="messageForm">
-        <input type="text" name="message" placeholder="Your message here">
-        <button type="submit">Send</button>
-    </form>
-
-    <script src="/socket.io/socket.io.js"></script>
-    <script src="/js/index.js"></script>
+<body class="centered-form">
+    <div class="centered-form__form">
+        <form action="/chat.html">
+            <div class="form-field">
+                <h3>Join a chat</h3>
+            </div>
+            <div class="form-field">
+                <label>Display name</label>
+                <input type="text" required name="name" autofocus>
+            </div>
+            <div class="form-field">
+                <label>Room name</label>
+                <input type="text" required name="room">
+            </div>
+            <div class="form-field">
+                <button type="submit">Join</button>
+            </div>
+        </form>
+    </div>
 </body>
 </html>
